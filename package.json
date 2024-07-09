@@ -1,0 +1,25 @@
+{
+  "name": "medihacks-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SLO-BCMC/Medi-Hacks-Project.git"
+  },
+  "author": "Mateo Wolfe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SLO-BCMC/Medi-Hacks-Project/issues"
+  },
+  "homepage": "https://github.com/SLO-BCMC/Medi-Hacks-Project#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "path": "^0.12.7"
+  }
+}
