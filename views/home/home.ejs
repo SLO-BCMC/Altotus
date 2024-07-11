@@ -1,31 +1,45 @@
-<%- include("../_partial/_header.ejs"); -%>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MediHacks Project</title>
-    <style>
-        .box {
-            border: 1px solid #000;
-            padding: 20px;
-            width: 200px;
-            margin: 20px auto;
-            text-align: center;
-        }
-        .box a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            color: #007BFF;
-        }
-        .box a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
-    <div class="box">
-        <a href="/question" target="_blank">Genetics</a>
-        <a href="/question" target="_blank">Biochemistry</a>
-    </div>
-
-<%- include("../_partial/_footer.ejs"); -%>
+<!DOCTYPE html>
+<html lang="en">
+    <div class="header">
+        <a href="#default" class="logo">CompanyLogo</a>
+        <div class="header-right">
+          <a class="active" href="/home">Home</a>
+          <a href="/contact">About</a>
+          <a href="/login">Log In</a>
+        </div>
+      </div>
+    <div class="container"> 
+<section id="services-218">
+    <header>
+        <center> 
+        <div class="cs-content">    
+            <h1 class="cs-header" style= "font-weight: bold;">Choose Your Subject</h1>
+        </center>
+    </header>
+            <li class="cs-item">
+                <a href="/question" class="cs-title" target="_blank">
+                    <button class="button" style="vertical-align:middle"><span class="cs-title">Biochemistry</span> </button>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/question" target= "_blank" class="cs-title">
+                    <button class="button" style="vertical-align:middle"><span class="cs-title">Pharmacology </span> </button>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/question" class="cs-title" target="_blank">
+                <button class="button" style="vertical-align:middle"><span class="cs-title">Genetics</span> </button>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/questions.js" class="cs-title" taget="_blank">
+                <button class="button" style="vertical-align:middle"><span class="cs-title">Case Studies</span> </button>
+                </a>
+            </li>
+</div>
+<sub class="cs-footer">Created by SLO BCMC</sub>
+</body>
+</html>
