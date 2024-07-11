@@ -1,18 +1,20 @@
-<%- include("../_partial/_header.ejs"); -%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Buttons</title>
+    <title>Question Test</title>
     <link rel="stylesheet" href="css/question_styles.css">
 </head>
 <body>
-    <button id="button1" class="interactive-button">Button 1</button>
-    <button id="button2" class="interactive-button">Button 2</button>
-
-    <script src="scripts/question_script.js"></script>
+<div class="app">
+    <h1>Simple Quiz</h1>
+    <div class="quiz">
+        <h2 id="question">Question goes here</h2>
+        <div id="answer-buttons"></div>
+        <div id="feedback" class="feedback"></div>
+        <button id="next-btn">Next</button>
+    </div>
+</div>
+<script src="scripts/question_script.js"></script>
 </body>
 </html>
-
 <%- include("../_partial/_footer.ejs"); -%>
