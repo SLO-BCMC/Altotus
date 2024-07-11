@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.interactive-button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.interactive-button:hover {
+    background-color: #0056b3;
+}
+
+.interactive-button:active {
+    background-color: #0056b3;
+    color: #fff;
+    transform: translateY(2px);
+}

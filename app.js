@@ -3,6 +3,10 @@ var path = require("path");
 var routes = require("./routes");
 var app = express();
 
+
+app.use('/css', express.static(path.join(__dirname, 'public/css')));
+app.use('/scripts', express.static(path.join(__dirname, '/scripts')));
+
 app.set("port", process.env.PORT || 3000);
 
 app.set("views", path.join(__dirname, "views"));
