@@ -6,6 +6,7 @@ var app = express();
 
 app.use('/css', express.static(path.join(__dirname, 'public/css')));
 app.use('/scripts', express.static(path.join(__dirname, '/scripts')));
+app.use('/images', express.static(path.join(__dirname, '/images')));
 
 app.set("port", process.env.PORT || 3000);
 

@@ -30,6 +30,11 @@ body {
     color: #001E4D;
     font-weight: 600;
 }
+.quiz img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
 .btn {
     background: #fff;
     color: #222;
