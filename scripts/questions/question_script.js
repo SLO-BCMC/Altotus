@@ -1,7 +1,7 @@
 const questions = [
   {
     question: "What amino acid is this?",
-    image: "images/question_images/arginine_pubchem.png", // Path to the image
+    image: "images/question_images/biochemistry/aminoAcids/arginine_pubchem.png", // Path to the image
     answers: [
       { text: "Arginine", correct: true },
       { text: "Glutamine", correct: false },
@@ -11,7 +11,7 @@ const questions = [
   },
   {
     question: "What nitrogenous base is this?",
-    image: "images/question_images/uracil_pubchem.png", // Path to the image
+    image: "images/question_images/biochemistry/aminoAcids/uracil_pubchem.png", // Path to the image
     answers: [
       { text: "Uracil", correct: true },
       { text: "Thymine", correct: false },
