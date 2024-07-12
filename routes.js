@@ -14,4 +14,9 @@ router.get("/biochemistry_home", function(req, res){
     res.render("home/biochemistry_home")
 })
 
+router.get("/inprogress", function(req, res){
+    console.log("sad")
+    res.render("home/inprogress")
+})
+
 module.exports = router;

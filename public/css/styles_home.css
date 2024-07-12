@@ -161,20 +161,5 @@ li {
   .button:hover {
     background-color: darkblue;
     color: lightskyblue;}
-.button-item {
-    
-    position: relative;
-    float: left; 
-    background-color: white;
-    border: 1px solid darkblue;
-    font-size: 28px;
-    color: lightsteelblue;
-    padding: 20px;
-    width:  25%;
-    display: block;
-    text-align: inherit;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-  }
+
+      
