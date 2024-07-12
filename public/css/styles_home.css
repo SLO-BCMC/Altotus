@@ -1,0 +1,165 @@
+:root {
+    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+    --primary: #1422b9;
+    --primaryLight: #1f86c6;
+    --secondary: #662294;
+    --secondaryLight: #8a6cd1;
+    --headerColor: rgb(192, 192, 255);
+    --bodyTextColor: rgb(192, 192, 255);
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: 32 px
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+.cs-header {
+    font-size: 100 px;
+    line-height: 1.2em;
+    font-weight: 900;
+    text-align: center;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--primary);
+    position: relative;
+    ;
+
+}
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: 20;
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+
+.cs-footer {
+    font-size: 12;
+    line-height: 1.5e;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40,625rem;
+    margin: 0;
+    color: blue
+}
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+}
+.header a {
+    float: left;
+    color: darkblue;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: #ddd;
+    color: var(--headerColor);
+  }
+  
+  .header a.active {
+    background-color: darkblue;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+
+ul {
+    list-style-type: none;
+  }
+
+li {
+    list-style-type: none;
+}
+  
+.button {
+    
+    position: relative;
+    float: left; 
+    background-color: white;
+    border: 1px solid darkblue;
+    font-size: 28px;
+    color: lightsteelblue;
+    padding: 20px;
+    width: 50%;
+    display: block;
+    text-align: inherit;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  .button:hover {
+    background-color: darkblue;
+    color: lightskyblue;}
+
+      
