@@ -1,17 +1,10 @@
 <head>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles_home.css">
 </head>
 <!DOCTYPE html>
 <html lang="en">
-    <div class="header">
-        <a href="#default" class="logo">CompanyLogo</a>
-        <div class="header-right">
-          <a class="active" href="/home">Home</a>
-          <a href="/contact">About</a>
-          <a href="/login">Log In</a>
-        </div>
-      </div>
-    <div class="container"> 
+<%- include("../_partial/_header.ejs"); -%>
+
 <section id="services-218">
     <header>
         <center> 
@@ -20,7 +13,7 @@
         </center>
     </header>
             <li class="cs-item">
-                <a href="/question" class="cs-title" target="_blank">
+                <a href="/biochemistry_home" class="cs-title" target="_blank">
                     <button class="button" style="vertical-align:middle"><span class="cs-title">Biochemistry</span> </button>
                 </a>
             </li>
@@ -35,7 +28,7 @@
                 </a>
             </li>
             <li class="cs-item">
-                <a href="/questions.js" class="cs-title" taget="_blank">
+                <a href="/question" class="cs-title" taget="_blank">
                 <button class="button" style="vertical-align:middle"><span class="cs-title">Case Studies</span> </button>
                 </a>
             </li>

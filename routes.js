@@ -10,5 +10,9 @@ router.get("/question", function(req, res){
     console.log("I tried")
     res.render("question/question")
 });
+router.get("/biochemistry_home", function(req, res){ 
+    console.log("penis")
+    res.render("home/biochemistry_home")
+})
 
 module.exports = router;
