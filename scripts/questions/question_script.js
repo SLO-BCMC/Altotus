@@ -27,8 +27,11 @@ const nextButton = document.getElementById("next-btn");
 const feedbackElement = document.getElementById("feedback");
 const imageElement = document.getElementById("question-image"); // New element for image
 const progressBar = document.getElementById("myprogress")
+let currentQuestion = 0;
+let totalQuestions = 10;
 let currentQuestionIndex = 0;
 let score = 0;
+
 
 function startQuiz() {
   currentQuestionIndex = 0;
@@ -55,8 +58,7 @@ function showQuestion() {
     }
     button.addEventListener("click", selectAnswer);
   });
-  const progressValue = (currentQuestionIndex + 1) / questions.length * 100; //daniel added change 
-  progressBar.value = progressValue; // Update progress bar
+  
 }
 
 function resetState() {
@@ -71,11 +73,23 @@ function resetState() {
 function selectAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct == "true";
+  const isnotCorrect = selectedBtn.dataset.correct == "false";
   if (isCorrect) {
     selectedBtn.classList.add("correct");
     feedbackElement.innerHTML = "Correct!";
     score++;
-  } else {
+    currentQuestion++;
+    
+      
+    //const progressValue = (currentQuestionIndex + 1) / questions.length * 100; //daniel added change 
+  //progressBar.value = progressValue;
+  } 
+
+  scoreText.textContent = `Progress: ${currentQuestion}/${totalQuestions}`;
+  const progressWidth = (currentQuestion / totalQuestions) * 100;
+  progressBar.style.width = `${progressWidth}%`;
+  
+  if(isnotCorrect) {
     selectedBtn.classList.add("incorrect");
     feedbackElement.innerHTML = "Incorrect.";
   }
