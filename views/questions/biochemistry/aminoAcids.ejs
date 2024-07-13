@@ -3,8 +3,43 @@
 <head>
     <title>Question Test</title>
     <link rel="stylesheet" href="css/questions/question_main.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Bank Progress</title>
+    <link rel="stylesheet" href="css/question_prog.css">
+    <style>
+        .progress-container {
+    width: 1217px;
+    height: 20px;
+    background-color: green;
+    border-radius: 5px;
+    overflow:hidden;
+}
+.progress{
+    height: 100%;
+    background-color: yellow;
+    transition: width 0.5s ease-in-out;
+}
+p{
+
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color:aliceblue;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+    </style>
 </head>
 <body>
+    <div class="progress-container">
+        <progress id="myProgress" value="0" max="100"></progress>
+    </div>
+    <p id="score">Progress: 0/0 </p>
 <div class="app">
     <h1>Amino Acids</h1>
     <div class="quiz">

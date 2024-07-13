@@ -26,6 +26,7 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const feedbackElement = document.getElementById("feedback");
 const imageElement = document.getElementById("question-image"); // New element for image
+const progressBar = document.getElementById("myprogress")
 let currentQuestionIndex = 0;
 let score = 0;
 
@@ -54,6 +55,8 @@ function showQuestion() {
     }
     button.addEventListener("click", selectAnswer);
   });
+  const progressValue = (currentQuestionIndex + 1) / questions.length * 100; //daniel added change 
+  progressBar.value = progressValue; // Update progress bar
 }
 
 function resetState() {
@@ -92,5 +95,15 @@ nextButton.addEventListener("click", () => {
     nextButton.addEventListener("click", startQuiz);
   }
 });
+/*function updateProgress(e) {
+  if (selectAnswer(e)) {
+    currentQuestion++;
+  }
+  scoreText.textContent = `Progress: ${currentQuestion}/${totalQuestions}`;
+  const progressValue = (currentQuestion / totalQuestions) * 100;
+  progressBar.value = progressValue;
+}
+totalQuestions = 2; 
+updateProgress(false); */
 
 startQuiz();
