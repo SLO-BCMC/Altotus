@@ -6,14 +6,19 @@
 }
 body {
     background: #001E4D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 .app {
     background: #fff;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
+    margin: 0 auto;
     border-radius: 10px;
     padding: 30px;
+    text-align: center;
 }
 .app h1 {
     font-size: 25px;
@@ -22,28 +27,41 @@ body {
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
 }
-.quiz {
-    padding: 20px 0;
+#quiz-container {
+    margin-top: 20px;
 }
-.quiz h2 {
+#question-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#question {
     font-size: 18px;
     color: #001E4D;
     font-weight: 600;
+    margin-bottom: 10px;
 }
-.quiz img {
+#question-image {
     max-width: 100%;
     height: auto;
     margin: 20px 0;
+    display: block;
+}
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .btn {
     background: #fff;
     color: #222;
     font-weight: 500;
-    width: 100%;
+    width: 48%;
     border: 1px solid #222;
     padding: 10px;
-    margin: 10px 0;
-    text-align: left;
+    margin: 5px 0;
+    text-align: center;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s;
@@ -75,4 +93,16 @@ body {
     margin: 10px 0;
     color: #001E4D;
     font-weight: 500;
+}
+#progress-container {
+    width: 100%;
+    background: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+#progress-bar {
+    height: 20px;
+    background: #001E4D;
+    width: 0;
 }
