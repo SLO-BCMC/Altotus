@@ -17,4 +17,8 @@ router.get("/aminoAcids", function(req, res){
     res.render("questions/biochemistry/aminoAcids")
 });
 
+router.get("/nucleicAcids", function(req, res){
+    res.render("questions/biochemistry/nucleicAcids")
+});
+
 module.exports = router;
