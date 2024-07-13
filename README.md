@@ -31,6 +31,6 @@ Navigate to `http://localhost:3000` to view the application.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
+This project is licensed under the MIT License.
 
 
